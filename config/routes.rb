@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/', to: 'animes#index'
   get '/anime/:id', to: 'animes#show'
-  post '/anime/:id', to: 'animes#create'
+  post '/anime', to: 'animes#create'
   patch '/anime/:id', to: 'animes#update'
   post '/anime/:id/episodes', to: 'animes#add_episode'
 end
