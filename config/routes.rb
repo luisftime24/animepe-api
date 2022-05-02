@@ -7,4 +7,8 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get '/', to: 'animes#index'
+  get '/anime/:id', to: 'animes#show'
+  post '/anime/:id', to: 'animes#create'
+  patch '/anime/:id', to: 'animes#update'
+  post '/anime/:id/episodes', to: 'animes#add_episode'
 end
